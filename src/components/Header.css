@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust from center to space-between */
+  padding: 10px;
+  background-color: var(--bg-color-light);
+  border-bottom: 2px solid rgba(211, 211, 211, 0.425);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between username/logout button and login link */
+  margin-right: 10px;
+}
+
+.header-right a, .header-right span {
+  color: var(--text-color-dark); /* Assuming a CSS variable for text color */
+  text-decoration: none;
+}

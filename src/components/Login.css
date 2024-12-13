@@ -1,0 +1,10 @@
+.loginpage{
+    text-align: center;
+}
+.inputs{
+    padding-top: 20vh;
+    /* font-size: 2rem; */
+}
+.inputs div{
+    padding: 5px;
+}

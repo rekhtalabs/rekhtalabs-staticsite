@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    padding-block: 10px;
+}
+ol{
+    text-align:justify;
+}
+.archive-page{
+    min-height: 100vh;
+    padding-inline: 100px;
+}
+
+@media (max-width:800px) {
+    .archive-page{
+        padding-inline: 10px;
+    }
+        
+}

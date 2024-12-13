@@ -1,0 +1,97 @@
+.page-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.overall-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+
+.textarea-container{
+  /* border :2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+textarea{
+  margin-top: 20px;
+  text-align: center;
+  width: 90%; 
+  max-width: 1000px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Adjust width as needed */
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  padding: 8px 16px; 
+  cursor: pointer; 
+  border: none; 
+  background-color: #3498db; 
+  color: white; 
+  border-radius: 4px;
+  /* Add width or max-width if you want to control the button size */
+}
+
+.form-container, .response-wrapper {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.response-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4ch;
+    /* border: 2px solid forestgreen; */
+}
+
+.response-wrapper div{
+  /* border: 1px solid red; */
+  margin-bottom: 2ch;
+  margin-top: 1ch;
+  text-align: center;
+}
+
+.response-wrapper .explanation{
+  text-align: justify;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+
+  .explanation{
+    max-width: 60vw;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (max-width:800px){
+    .explanation{
+      max-width: 90vw;
+    }
+  }

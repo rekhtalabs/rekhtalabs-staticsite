@@ -1,0 +1,67 @@
+
+.app {
+  text-align: center;
+}
+
+
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+.main-title{
+  font-size: 1.6rem;
+}
+.main-subtitle{
+  font-size: 1rem;
+}
+
+
+/* .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));   
+  gap: 50px; 
+  padding: 20px;
+  justify-content: center;
+  margin: 10px;
+} */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  padding: 20px;
+  justify-content: center; /* Horizontally centers the grid items if there's extra space */
+  align-items: start; /* Aligns items at the start of the grid row */
+  overflow: hidden; /* Ensures no overflow outside the grid container */
+}
+
+
+.section-title{
+  font-size: 1.6rem;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.main-sections p{
+  padding-inline: 100px;
+  text-align: justify;
+}
+
+.main-sections ul{
+  padding-inline: 150px;
+  text-align: left;
+}
+
+@media (max-width: 800px){
+  .projects-container{
+    gap :20px;
+    padding: 10px;
+  }
+  .main-sections p{
+    padding-inline: 20px;
+  }
+  .main-sections ul{
+    padding-inline: 40px;
+  }
+}

@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    font-family: 'Arial', sans-serif;
+    --text-color-dark:#000000;
+    --text-color-medium:#000000a6;
+    --text-color-light:#00000067;
+  
+    --bg-color-light: #f1f1f1;
+    /* --bg-color-medium-transparent: rgba(102, 102, 102, 0.877);    */
+    --bg-color-medium-transparent: rgba(102, 102, 102, 0.97);   
+  }
+  
+  .app {
+    text-align: center;
+  }
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This makes the app wrapper at least as tall as the viewport */
+  }
+  .main-content{
+    flex:1;
+  }
